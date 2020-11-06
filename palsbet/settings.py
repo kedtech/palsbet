@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sport',
+    'rest_framework',
+    'import_export',
 ]
 
 MIDDLEWARE = [
