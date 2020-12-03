@@ -3,7 +3,7 @@
 <h5 class="text-center">Betting is more fun when you are winning </h5>
 </div>
 <!-- table for today's tips -->
-             {% regroup results_page_teams by ticket as ticket_list %}
+             {% regroup home_page_teams by ticket as ticket_list %}
 
                  {% for ticket in ticket_list %}
 
@@ -17,10 +17,9 @@
  <div style="overflow-x:auto;">
 <table border="2" cellpadding = "5">
 
-<tr style='background-color: indigo'>
+<tr style='background-color: teal'>
 <th style='color: white'>Country</th>
 <th style='color: white'>Teams</th>
-<th style='color: white'>Scores</th>
 <th style='color: white'>Prediction</th>
 <th style='color: white'>Odds</th>
 <th style='color: white'>Status</th>
@@ -29,13 +28,11 @@
                          {% for item in ticket.list %}
 
                          <tr>
-                             <td style='background-color: plum;' >{{ item.country }}</td>
+                             <td style='background-color:' >{{ item.country }}</td>
 
                              <td >{{ item.home_team }}  <i class="far fa-futbol"></i>  {{ item.away_team}}</td>
 
-                             <td style='background-color: plum;' >{{ item.home_score}} - {{ item.away_score}}</td>
-
-                             <td style='background-color: plum;' >{{ item.prediction}}</td>
+                             <td style='background-color:' >{{ item.prediction}}</td>
 
                              <td>{{ item.odds}}</td>
 

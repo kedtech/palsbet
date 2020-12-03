@@ -25,10 +25,6 @@ class FreeTipsGame(models.Model):
 
     home_team = models.CharField(max_length = 200, null = True)
 
-    home_score = models.PositiveIntegerField(default = 0)
-
-    away_score = models.PositiveIntegerField(default = 0)
-
     away_team = models.CharField(max_length = 200, null = True)
 
     prediction = models.CharField(max_length = 100, null = True)
@@ -55,10 +51,6 @@ class vipTipsGame(models.Model):
     country = models.CharField(max_length = 200, null = True)
 
     home_team = models.CharField(max_length = 200, null = True)
-
-    home_score = models.PositiveIntegerField(default = 0)
-
-    away_score = models.PositiveIntegerField(default = 0)
 
     away_team = models.CharField(max_length = 200, null = True)
 
@@ -87,10 +79,6 @@ class RollTipsGame(models.Model):
 
     home_team = models.CharField(max_length = 200, null = True)
 
-    home_score = models.PositiveIntegerField(default = 0)
-
-    away_score = models.PositiveIntegerField(default = 0)
-
     away_team = models.CharField(max_length = 200, null = True)
 
     prediction = models.CharField(max_length = 100, null = True)
@@ -117,10 +105,6 @@ class SingleBet(models.Model):
     country = models.CharField(max_length = 200, null = True)
 
     home_team = models.CharField(max_length = 200, null = True)
-
-    home_score = models.PositiveIntegerField(default = 0)
-
-    away_score = models.PositiveIntegerField(default = 0)
 
     away_team = models.CharField(max_length = 200, null = True)
 
