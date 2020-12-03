@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -139,7 +140,7 @@ if 'DATABASE_URL' in os.environ:
     import dj_database_url
     DATABASES = {'default': dj_database_url.config()}
 
-#admin.site.site_header = 'PalsBet Admin Panel'
-#admin.site.site_title = 'PalsBet Admin Panel'
+#admin.site.site_header = 'Palsbet Admin Panel'
+#admin.site.site_title = 'Palsbet Admin Panel'
 
 ADMINS = (('Keneth', 'palsbet1@gmail.com'),)
