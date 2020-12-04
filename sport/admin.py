@@ -33,6 +33,9 @@ class CustomUserAdmin(UserAdmin):
             return list()
         return super(CustomUserAdmin, self).get_inline_instances(request, obj)
 
+admin.site.site_header = 'Palsbet Admin Panel'
+admin.site.site_title = 'Palsbet Admin Panel'
+
 admin.site.unregister(User)
 admin.site.register(User, CustomUserAdmin)
 
