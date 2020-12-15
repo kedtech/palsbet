@@ -13,9 +13,9 @@ def home(request):
 
     args = {}
 
-    home = FreeTipsGame.objects.filter(ticket__published=True)
+    home_page_teams = FreeTipsGame.objects.filter(ticket__published=True)
 
-    args ['home'] = home
+    args ['home_page_teams'] = home_page_teams
 
     return render(request, 'free/home.html', args)
 
