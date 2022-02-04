@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 's7eru^)1y(kwflnvbffp-iy@@!h7^g
 #DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['palsport.herokuapp.com','www.palsbet.com','www.palsbet.co.ke']
+ALLOWED_HOSTS = ['palsport.herokuapp.com','www.palsbet.com','www.palsbet.co.ke','127.0.0.1']
 
 
 # Application definition
