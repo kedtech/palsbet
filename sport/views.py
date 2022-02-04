@@ -94,19 +94,11 @@ def viptipsgames(request):
 
     return render(request, 'free/viptipsgames.html', args)
 
-def punterpick(request):
+def jackpot(request):
 
-    model = RollTipsGame
+    template_name = 'jackpot.html'
 
-    template_name = 'punterpick.html'
-
-    args = {}
-
-    home_page_teams = RollTipsGame.objects.filter(ticket__published=True)
-
-    args ['home_page_teams'] = home_page_teams
-
-    return render(request, 'free/punterpick.html', args)
+    return render(request, 'free/jackpot.html')
 
 def twitter(request):
     return redirect("https://twitter.com/predictpoa/")
