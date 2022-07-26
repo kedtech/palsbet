@@ -4,6 +4,7 @@
 </div>
 <!-- table for today's tips -->
              {% regroup home.html by ticket as ticket_list %}
+             {% regroup singlebet.html by ticket as ticket_list %}
 
                  {% for ticket in ticket_list %}
 
